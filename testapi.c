@@ -27711,6 +27711,8 @@ test_xmlFileOpen(void) {
             printf(" %d", n_filename);
             printf("\n");
         }
+		// close it!
+		xmlFileClose(ret_val);
     }
     function_tests++;
 
