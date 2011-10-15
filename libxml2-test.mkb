@@ -1,0 +1,25 @@
+#!/usr/bin/env mkb
+options
+{
+}
+
+packages
+{
+}
+
+defines
+{
+}
+
+subprojects
+{
+	libxml2
+} 
+
+files
+{
+	["source"]
+	# runsuite.c
+	runtest.c
+	# runxmlconf.c
+}
