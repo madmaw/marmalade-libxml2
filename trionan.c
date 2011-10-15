@@ -643,7 +643,7 @@ TRIO_ARGS2((number, is_negative),
 #  define TRIO_NEGATIVE_NORMAL FP_MINUS_NORM
 # endif
 
-# if defined(TRIO_FPCLASSIFY)
+# if defined(TRIO_FPCLASSIFY) && !defined(TRIO_FPCLASSIFY_HACK)
   switch (TRIO_FPCLASSIFY(number)) {
   case TRIO_QUIET_NAN:
   case TRIO_SIGNALLING_NAN:
